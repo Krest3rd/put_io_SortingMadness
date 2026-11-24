@@ -22,6 +22,6 @@ public class BubbleSortStrategy implements SortStrategy {
         long iterations = 0;
         boolean limitReached = false;
 
-        return new SortExecutionResult(list, iterations, limitReached);
+        return new SortExecutionResult(items, iterations, limitReached);
     }
 }

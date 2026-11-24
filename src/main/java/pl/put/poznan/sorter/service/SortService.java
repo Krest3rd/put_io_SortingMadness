@@ -1,10 +1,11 @@
 package pl.put.poznan.sorter.service;
 
-import pl.put.poznan.sorter.strategy.SortStrategy
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-/**
- * This is just an example to show that the logic should be outside the REST service.
- */
+import pl.put.poznan.sorter.strategy.factory.SortFactory;
+
+@Service
 public class SortService {
 
     private final SortFactory sortFactory;
